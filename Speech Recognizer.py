@@ -11,8 +11,7 @@ r=sr.Recognizer()
 with sr.AudioFile(Audio_File) as source:
     audio=r.record(source)
 try:
-    #print("Audio contains:-" +r.recognize_google(audio))
-    print("Audio Contains:-hello i love coding")
+    print("Audio contains:-" +r.recognize_google(audio))
 except sr.UnknownValueError:
     print("Google could not get the audio")
     
